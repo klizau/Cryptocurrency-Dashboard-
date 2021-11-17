@@ -54,6 +54,11 @@ select {
   font: inherit;
 }
 
+.img-responcive {
+  width: 100%;
+  height: auto;
+}
+
 .body {
   display: grid;
   grid-template-columns: 100px auto;
@@ -152,4 +157,90 @@ select {
   bottom: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.card {
+  border: 2px solid #c4c3c8;
+  border-radius: 20px;
+  background-color: #3c354a;
+  padding: 16px 20px;
+}
+
+.big_card {
+  margin: 10px;
+}
+
+.main_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 15px;
+}
+
+.side-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left {
+  display: flex;
+  justify-self: flex-start;
+}
+
+.right {
+  display: flex;
+  justify-self: flex-end;
+}
+
+.slidebar {
+  display: flex;
+  width: 546px;
+  overflow: auto;
+}
+
+.coin-group {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  box-sizing: border-box;
+  width: 240px;
+  height: 155px;
+  margin-right: 20px;
+  margin-top: 30px;
+  flex-shrink: 0;
+}
+
+.graph-card {
+  position: absolute;
+  right: 17;
+  bottom: 0;
+  left: 17;
+  width: 100%;
+  height: auto;
+}
+
+.coin-img {
+  position: absolute;
+  top: -25px;
+  right: 95px;
+  left: 95px;
+}
+
+.compare {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.procent {
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.amount {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 62px;
 }
