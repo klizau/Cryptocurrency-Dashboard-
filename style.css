@@ -198,11 +198,14 @@ select {
   font-weight: medium;
 }
 
-.offer-button {
+.button {
   color: white;
   background-color: #261b4c;
   border-radius: 10px;
   border: transparent;
+}
+
+.offer-button {
   width: 144px;
   height: 43px;
   font-size: 16px;
