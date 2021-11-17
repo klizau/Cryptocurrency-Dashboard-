@@ -176,6 +176,39 @@ select {
   margin: 15px;
 }
 
+.card--offer {
+  background: url("./img/main.png") left center / cover no-repeat;
+}
+
+.text-group {
+  width: 226px;
+  font-weight: bold;
+}
+
+.offer-tipe {
+  font-size: 10px;
+}
+
+.offer-title {
+  font-size: 30px;
+}
+
+.offer-text {
+  font-size: 14px;
+  font-weight: medium;
+}
+
+.offer-button {
+  color: white;
+  background-color: #261b4c;
+  border-radius: 10px;
+  border: transparent;
+  width: 144px;
+  height: 43px;
+  font-size: 16px;
+  margin-top: 43px;
+}
+
 .side-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
