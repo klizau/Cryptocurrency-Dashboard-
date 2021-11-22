@@ -58,7 +58,7 @@ select {
   font-size: 18px;
   font-weight: bold;
   box-sizing: border-box;
-  margin-bottom: 21px;
+  padding: 10px;
 }
 
 .h3 {
@@ -315,13 +315,34 @@ select {
 .market-graph {
   width: 526px;
   height: auto;
+  position: relative;
+}
+
+.market-selector {
+  border-color: transparent;
+  border-radius: 10px;
+  background-color: #1a111d;
+  color: #e2d8fd;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  width: 105px;
+  height: 37px;
+}
+
+.market-index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 18px;
 }
 
 .line {
-  display: flex;
-  justify-content: space-around;
   position: absolute;
-  bottom: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .glassy-card {
@@ -331,11 +352,11 @@ select {
 .currency {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .time {
   display: flex;
-  justify-content: flex-end;
 }
 
 .time-button {
@@ -350,10 +371,6 @@ select {
   width: 141px;
   height: 41px;
   padding-left: 45px;
-}
-
-.currency-button::before {
-  background: url(./img/curr/arrow.png) left center no-repeat;
 }
 
 .active-button {
@@ -394,4 +411,9 @@ select {
 .Profits {
   display: grid;
   grid-template-rows: 1fr 1fr;
+}
+
+.profits-index {
+  display: grid;
+  grid-template-columns: 42px auto;
 }

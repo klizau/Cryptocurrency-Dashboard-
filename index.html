@@ -265,17 +265,19 @@
             </div>
             <!-- market overview -->
             <div class="card market-overview">
-              <div class="title"><h2 class="h2">Market Overview</h2></div>
-              <select name="duration">
-                <option value="1">
-                  <span class="currency-1"> Monthly</span>
-                </option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-              </select>
+              <div class="market-index">
+                <div class="title"><h2 class="h2">Market Overview</h2></div>
+                <select class="market-selector" name="duration">
+                  <option value="1">
+                    <span class="currency-1"> Monthly</span>
+                  </option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
               <div class="market-graph">
                 <img
                   src="./img/overview/chart.png"
@@ -283,8 +285,7 @@
                   width="490px"
                   height="auto"
                 />
-              </div>
-              <div>
+
                 <img
                   class="line"
                   src="./img/overview/line.png"
@@ -320,6 +321,7 @@
                     width="60"
                   />
                 </div>
+
                 <div class="enter-amount">
                   <span>Amount:</span>
                   <div class="$-amount">
@@ -345,36 +347,36 @@
                 </div>
                 <!-- income-->
                 <div class="Profits">
-                  <div class="arrow">
-                    <img
-                      src="./img/profit/arrow-up.png"
-                      alt="arrow-up"
-                      width="43"
-                      height="42"
-                    />
-                  </div>
-                  <div class="money">
-                    <span class="currency green">$</span>
-                    <span>1892.25</span>
-                  </div>
-                  <div class="value">
-                    <span>Income</span>
+                  <div class="profits-index">
+                    <div class="arrow">
+                      <img
+                        src="./img/profit/arrow-up.png"
+                        alt="arrow-up"
+                        width="43"
+                        height="42"
+                      />
+                    </div>
+                    <div class="money">
+                      <span class="currency green">$</span>
+                      <span>1892.25</span>
+                      <span>Income</span>
+                    </div>
                   </div>
                   <!-- Expenses-->
-                  <div class="arrow">
-                    <img
-                      src="./img/profit/arrow-down.png"
-                      alt="arrow-up"
-                      width="43"
-                      height="42"
-                    />
-                  </div>
-                  <div class="money">
-                    <span class="currency red">$</span>
-                    <span>387.47</span>
-                  </div>
-                  <div class="value">
-                    <span>Expenses</span>
+                  <div class="profits-index">
+                    <div class="arrow">
+                      <img
+                        src="./img/profit/arrow-down.png"
+                        alt="arrow-up"
+                        width="43"
+                        height="42"
+                      />
+                    </div>
+                    <div class="money">
+                      <span class="currency red">$</span>
+                      <span>387.47</span>
+                      <span>Expenses</span>
+                    </div>
                   </div>
                 </div>
               </div>
