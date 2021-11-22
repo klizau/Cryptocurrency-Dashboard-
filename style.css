@@ -54,6 +54,20 @@ select {
   font: inherit;
 }
 
+.h2 {
+  font-size: 18px;
+  font-weight: bold;
+  box-sizing: border-box;
+  margin-bottom: 21px;
+}
+
+.h3 {
+  font-size: 10px;
+  font-weight: normal;
+  box-sizing: border-box;
+  margin-bottom: 13px;
+}
+
 .img-responcive {
   width: 100%;
   height: auto;
@@ -305,7 +319,79 @@ select {
 
 .line {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   position: absolute;
   bottom: 10px;
+}
+
+.glassy-card {
+  position: relative;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+}
+
+.time {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.time-button {
+  width: 38px;
+  height: 37px;
+  color: #868b93;
+  margin-right: 10px;
+}
+
+.currency-button {
+  position: relative;
+  width: 141px;
+  height: 41px;
+  padding-left: 45px;
+}
+
+.currency-button::before {
+  background: url(./img/curr/arrow.png) left center no-repeat;
+}
+
+.active-button {
+  color: white;
+}
+
+.market-trend {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.list-name {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 11px;
+  margin-bottom: 8px;
+}
+
+.company {
+  font-weight: bold;
+}
+
+.company-name {
+  color: #9a9a9a;
+}
+
+.list-price {
+  color: #9292c1;
+  font-size: 11px;
+  margin-bottom: 8px;
+}
+
+.change {
+  font-size: 11px;
+  margin-bottom: 8px;
+}
+
+.Profits {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }

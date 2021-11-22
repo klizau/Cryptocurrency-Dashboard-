@@ -80,7 +80,7 @@
             <div class="glassy-card">
               <div class="currency">
                 <div class="left">
-                  <select class="currency button" name="currency">
+                  <select class="currency-button button" name="currency">
                     <option value="1">
                       <span class="currency-1"> ETH/USD</span>
                     </option>
@@ -90,11 +90,20 @@
                     <option value="5">5</option>
                     <option value="6">6</option>
                   </select>
+                  <img
+                    class="currency-img"
+                    src="./img/curr/arrow.png"
+                    alt="arrow"
+                  />
                 </div>
                 <div class="time">
-                  <button class="button 1d active">1D</button>
-                  <button class="button 1w nonactive">1W</button>
-                  <button class="button 1m nonactive">1M</button>
+                  <button class="button time-button active-button">1D</button>
+                  <button class="button time-button nonactive-button">
+                    1W
+                  </button>
+                  <button class="button time-button nonactive-button">
+                    1M
+                  </button>
                 </div>
               </div>
               <div class="chart">
@@ -275,8 +284,13 @@
                   height="auto"
                 />
               </div>
-              <div class="line">
-                <img src="./img/overview/line.png" alt="line" height="189" />
+              <div>
+                <img
+                  class="line"
+                  src="./img/overview/line.png"
+                  alt="line"
+                  height="189"
+                />
               </div>
             </div>
           </div>
@@ -326,11 +340,11 @@
               </div>
               <!-- Profits-->
               <div class="card">
+                <div class="profit">
+                  <h2 class="h2">Profit</h2>
+                </div>
+                <!-- income-->
                 <div class="Profits">
-                  <div class="profit">
-                    <h2 class="h2">Profit</h2>
-                  </div>
-                  <!-- income-->
                   <div class="arrow">
                     <img
                       src="./img/profit/arrow-up.png"
@@ -369,28 +383,34 @@
             <div class="right-side">
               <div class="card">
                 <div class="title"><h2 class="h2">Market Trend</h2></div>
-                <div class="table">
+                <div class="market-trend">
                   <!-- name-->
                   <div class="name">
                     <h3 class="h3">name</h3>
                     <ul class="table-name">
                       <li class="list-name">
-                        <span class="company">BTC</span> Bitcoin
+                        <span class="company">BTC</span>
+                        <span class="company-name">Bitcoin </span>
                       </li>
                       <li class="list-name">
-                        <span class="company">BNB</span> BNB
+                        <span class="company">BNB</span>
+                        <span class="company-name">BNB </span>
                       </li>
                       <li class="list-name">
-                        <span class="company">ETH</span> Ethereum
+                        <span class="company">ETH</span>
+                        <span class="company-name">Ethereum</span>
                       </li>
                       <li class="list-name">
-                        <span class="company">LTC</span> Litecoin
+                        <span class="company">LTC</span>
+                        <span class="company-name">Litecoin</span>
                       </li>
                       <li class="list-name">
-                        <span class="company">ADA</span> Cardano
+                        <span class="company">ADA</span>
+                        <span class="company-name">Cardano </span>
                       </li>
                       <li class="list-name">
-                        <span class="company">CAKE</span> Pancake
+                        <span class="company">CAKE</span>
+                        <span class="company-name">Pancake </span>
                       </li>
                     </ul>
                   </div>
@@ -407,66 +427,67 @@
                       <li class="list-price">$72650</li>
                     </ul>
                   </div>
-                </div>
-                <!-- 24h Change-->
-                <div class="24h-Change">
-                  <h3 class="h3">24h Change</h3>
-                  <ul class="table-24h-Change">
-                    <li class="change">
-                      2,540
-                      <img
-                        src="./img/market/green.png"
-                        alt="green"
-                        width="10"
-                        height="6"
-                      />
-                    </li>
-                    <li class="change">
-                      2,304
-                      <img
-                        src="./img/market/red.png"
-                        alt="red"
-                        width="10"
-                        height="6"
-                      />
-                    </li>
-                    <li class="change">
-                      1,320
-                      <img
-                        src="./img/market/red.png"
-                        alt="red"
-                        width="10"
-                        height="6"
-                      />
-                    </li>
-                    <li class="change">
-                      2,140
-                      <img
-                        src="./img/market/green.png"
-                        alt="green"
-                        width="10"
-                        height="6"
-                      />
-                    </li>
-                    <li class="change">
-                      1,976
-                      <img
-                        src="./img/market/green.png"
-                        alt="green"
-                        width="10"
-                        height="6"
-                      />
-                    </li>
-                    <li class="change">
-                      1,903
-                      <img
-                        src="./img/market/red.png"
-                        alt="green"
-                        width="10"
-                        height="6"
-                      />
-                    </li>
-                  </ul>
+
+                  <!-- 24h Change-->
+                  <div class="24h-Change">
+                    <h3 class="h3">24h Change</h3>
+                    <ul class="table-24h-Change">
+                      <li class="change">
+                        2,540
+                        <img
+                          src="./img/market/green.png"
+                          alt="green"
+                          width="10"
+                          height="6"
+                        />
+                      </li>
+                      <li class="change">
+                        2,304
+                        <img
+                          src="./img/market/red.png"
+                          alt="red"
+                          width="10"
+                          height="6"
+                        />
+                      </li>
+                      <li class="change">
+                        1,320
+                        <img
+                          src="./img/market/red.png"
+                          alt="red"
+                          width="10"
+                          height="6"
+                        />
+                      </li>
+                      <li class="change">
+                        2,140
+                        <img
+                          src="./img/market/green.png"
+                          alt="green"
+                          width="10"
+                          height="6"
+                        />
+                      </li>
+                      <li class="change">
+                        1,976
+                        <img
+                          src="./img/market/green.png"
+                          alt="green"
+                          width="10"
+                          height="6"
+                        />
+                      </li>
+                      <li class="change">
+                        1,903
+                        <img
+                          src="./img/market/red.png"
+                          alt="green"
+                          width="10"
+                          height="6"
+                        />
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div class="card">
