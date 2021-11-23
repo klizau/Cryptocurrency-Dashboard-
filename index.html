@@ -347,7 +347,7 @@
                 </div>
                 <!-- income-->
                 <div class="Profits">
-                  <div class="profits-index">
+                  <div class="profits-index profit-income">
                     <div class="arrow">
                       <img
                         src="./img/profit/arrow-up.png"
@@ -357,9 +357,11 @@
                       />
                     </div>
                     <div class="money">
-                      <span class="currency green">$</span>
-                      <span>1892.25</span>
-                      <span>Income</span>
+                      <div class="money-amount">
+                        <span class="currency green">$</span>
+                        <span class="currency-amount">1892.25</span>
+                      </div>
+                      <span class="currency-name">Income</span>
                     </div>
                   </div>
                   <!-- Expenses-->
@@ -373,11 +375,18 @@
                       />
                     </div>
                     <div class="money">
-                      <span class="currency red">$</span>
-                      <span>387.47</span>
-                      <span>Expenses</span>
+                      <div class="money-amount">
+                        <span class="currency red">$</span>
+                        <span class="currency-amount">387.47</span>
+                      </div>
+                      <span class="currency-name">Expenses</span>
                     </div>
                   </div>
+                  <img
+                    class="profit-line"
+                    src="./img/profit/Line.png"
+                    alt="line"
+                  />
                 </div>
               </div>
             </div>
