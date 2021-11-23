@@ -454,3 +454,38 @@ select {
   position: absolute;
   top: 50%;
 }
+
+.transfer-button {
+  width: 200px;
+  height: 40px;
+  background-color: #b97cf5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.transfer-send {
+  padding-right: 10px;
+}
+
+.procent-amount {
+  display: flex;
+  align-items: center;
+}
+
+.amount-title {
+  color: #9080ba;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.procent {
+  margin-left: 5px;
+  align-items: flex-start;
+}
+
+.procent-value {
+  font-size: 25px;
+  font-weight: bold;
+}
