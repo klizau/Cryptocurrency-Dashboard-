@@ -178,6 +178,7 @@ select {
   border-radius: 20px;
   background-color: #3c354a;
   padding: 16px 20px;
+  margin: 10px;
 }
 
 .big_card {
@@ -456,7 +457,7 @@ select {
 }
 
 .transfer-button {
-  width: 200px;
+  width: 100%;
   height: 40px;
   background-color: #b97cf5;
   display: flex;
@@ -488,4 +489,49 @@ select {
 .procent-value {
   font-size: 25px;
   font-weight: bold;
+}
+
+.Assets-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.assent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-name {
+  display: grid;
+  grid-template-rows: auto auto;
+  margin-left: 10px;
+}
+
+.assets-name {
+  font-size: 14px;
+  color: white;
+}
+
+.abbreviation {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.assets-company {
+  display: grid;
+  grid-template-columns: 32px auto;
+}
+
+.procent {
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+}
+
+.price-amount {
+  font-size: 12px;
+  font-weight: bold;
+  color: #9a9a9a;
 }
